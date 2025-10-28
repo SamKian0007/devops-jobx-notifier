@@ -1,0 +1,46 @@
+<!-- home.html -->
+ 
+{% extends "layout.html" %}
+
+{% block content %}
+  {% with msgs = get_flashed_messages(with_categories=true) %}
+    {% if msgs %}
+      <div class="mb-3">
+        {% for cat, m in msgs %}
+          <div class="alert alert-{{ 'danger' if cat=='error' else cat }} mb-2">{{ m }}</div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  {% endwith %}
+
+  <div class="row g-4">
+    <p>Welcome to the Home Page!</p>
+
+    {% if session.get('logged_in') %}
+      <div class="col-12">
+        <div class="card p-3">
+          <h5 class="mb-2">Hi, {{ session.get('username') }} 👋</h5>
+          <p class="mb-3">You’re logged in.</p>
+          <a class="btn btn-outline-secondary" href="{{ url_for('auth.logout') }}">Log out</a>
+        </div>
+      </div>
+    {% else %}
+      <div class="col-md-6">
+        <div class="card p-3">
+          <h5 class="mb-3">Log in</h5>
+          <form method="post" action="{{ url_for('auth.login') }}">
+            <div class="mb-3">
+              <label class="form-label">Username</label>
+              <input name="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Password</label>
+              <input type="password" name="password" class="form-control" required>
+            </div>
+            <button class="btn btn-primary" type="submit">Log in</button>
+          </form>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}

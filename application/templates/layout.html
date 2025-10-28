@@ -1,0 +1,30 @@
+<!-- layout.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title or "Job Explorer" }}</title>
+
+  <!-- Local Bootstrap CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+
+  <style>
+    body { padding: 1.5rem; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    .card { border-radius: 0.75rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+  <div class="container">
+    <header class="mb-4">
+      <h1 class="fw-bold">{{ header or "Job Explorer !" }}</h1>
+    </header>
+
+    {% block content %}{% endblock %}
+  </div>
+
+  <!-- Local Bootstrap JS -->
+  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+</body>
+</html>
