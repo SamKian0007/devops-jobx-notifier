@@ -24,8 +24,12 @@ def home():
 @app.get("/login")
 def login():
     if not session.get("logged_in"):
-        return redirect(url_for("auth.login"))
+        return redirect(url_for("auth.retry_login"))
     return render_template("login.html", title="login", header="Job Explorer !")
+
+@app.get("/retry_login")
+def retry_login():
+    return render_template("retry_login.html", title="retry_login", header="Job Explorer !")
 
 
 @app.get("/jobs/devops")
