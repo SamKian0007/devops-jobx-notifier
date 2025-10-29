@@ -1,0 +1,32 @@
+<!-- retry_login.html -->
+
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="mb-3">
+    <div class="alert alert-danger mb-2">
+      Wrong username or password. Please try again.
+    </div>
+  </div>
+
+  <div class="row g-4">
+    <p>Welcome back! Please log in again.</p>
+
+    <div class="col-md-6">
+      <div class="card p-3">
+        <h5 class="mb-3">Log in</h5>
+        <form method="post" action="{{ url_for('auth.login') }}">
+          <div class="mb-3">
+            <label class="form-label">Username</label>
+            <input name="username" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" name="password" class="form-control" required>
+          </div>
+          <button class="btn btn-primary" type="submit">Log in</button>
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

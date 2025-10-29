@@ -17,9 +17,11 @@ def login():
         session["logged_in"] = True
         session["username"] = u
         flash("Logged in successfully.", "success")
+        return redirect(url_for("login"))
     else:
         flash("Invalid username or password.", "error")
-    return redirect(url_for("login"))
+        return redirect(url_for("home"))
+
 
 
 @bp.get("/logout")
