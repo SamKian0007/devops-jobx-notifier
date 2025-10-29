@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="row">
+	<div class="col-lg-8 mx-auto">
+		<div class="card mb-4">
+			<div class="card-body">
+				<h2 class="h4 mb-3">Search Jobs with Filters</h2>
+				<form method="post" action="{{ url_for('jobs_filter') }}" class="row g-3">
+					<div class="col-md-6">
+						<label for="keywords" class="form-label">Keywords</label>
+						<input type="text" class="form-control" id="keywords" name="keywords" placeholder="e.g. devops, python" value="{{ (request.form.keywords or '') if request.form else '' }}">
+					</div>
+
+					<div class="col-md-6">
+						<label for="location" class="form-label">Location (Use municipality code (Kommunkod))</label>
+						<input type="text" class="form-control" id="location" name="location" placeholder="e.g. Stockholm" value="{{ (request.form.location or '') if request.form else '' }}">
+					</div>
+
+					<div class="col-md-6">
+						<label for="remote" class="form-label">Remote</label>
+						<select class="form-select" id="remote" name="remote">
+							<option value="">Any</option>
+							<option value="Yes" {% if request.form and request.form.get('remote')=='Yes' %}selected{% endif %}>Yes</option>
+							<option value="No" {% if request.form and request.form.get('remote')=='No' %}selected{% endif %}>No</option>
+						</select>
+					</div>
+
+					<div class="col-md-3">
+						<label for="limit" class="form-label">Limit</label>
+						<input type="number" class="form-control" id="limit" name="limit" min="1" max="100" value="{{ (request.form.limit or 20) if request.form else 20 }}">
+					</div>
+
+					<div class="col-md-3">
+						<label for="offset" class="form-label">Offset</label>
+						<input type="number" class="form-control" id="offset" name="offset" min="0" value="{{ (request.form.offset or 0) if request.form else 0 }}">
+					</div>
+
+					<div class="col-12">
+						<button type="submit" class="btn btn-primary">Search</button>
+					</div>
+				</form>
+			</div>
+		</div>
+
+		{% if results is defined %}
+		<div class="card">
+			<div class="card-body">
+				<div class="d-flex justify-content-between align-items-center mb-2">
+					<h3 class="h5 mb-0">Results</h3>
+					<span class="badge text-bg-secondary">{{ results|length }} hits</span>
+				</div>
+
+				<!-- Simple raw view to keep implementation robust against API changes -->
+				<pre class="mb-0" style="white-space: pre-wrap; word-break: break-word; max-height: 60vh; overflow: auto;">{{ results | tojson(indent=2) }}</pre>
+			</div>
+		</div>
+		{% endif %}
+	</div>
+</div>
+{% endblock %}
