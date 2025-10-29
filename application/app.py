@@ -4,6 +4,7 @@ import os
 
 from application.jobs_dataframe import devops_jobs_dataframe
 from application.dataframe_plot import jobs_devops_plot
+from application.dataframe_devops import jobs_devops_formated
 from application.notify import send_devops_jobs_update
 from application.login import bp as auth_bp  # NEW
 from application.services_providers.search_with_filters import (
@@ -22,6 +23,7 @@ app.register_blueprint(auth_bp)  # NEW
 @app.get("/")
 def home():
     return render_template("home.html")
+
 
 @app.get("/login")
 def login():
@@ -54,15 +56,13 @@ def jobs_filter_post():
     )
 
 
-
 @app.get("/jobs/devops")
 def jobs_devops():
-    df = devops_jobs_dataframe("devops", 50)
-    return f"<h2>DevOps Jobs</h2>{df.to_html(index=False, border=1)}"
+    return jobs_devops_formated()
 
 
 @app.get("/jobs/devops/plot")
-def _view_plot():
+def view_plot():
     return jobs_devops_plot()
 
 

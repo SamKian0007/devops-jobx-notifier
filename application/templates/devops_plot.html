@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  {% if message %}
+    <div class="alert alert-success" role="alert">{{ message }}</div>
+  {% endif %}
+
+  <form method="post" action="{{ url_for('notify_users') }}" class="mb-3">
+
+    <button type="submit" class="btn btn-primary">Inform applicants</button>
+  </form>
+
+  <div class="row g-4">
+    <div class="col-12">
+      <div class="card p-3">
+        <h2 class="h5">Plot</h2>
+        {{ chart_html|safe }}
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="card p-3">
+        <h2 class="h5">Job Table</h2>
+        {{ table_html|safe }}
+      </div>
+    </div>
+    </div>
+  {% endblock %}
