@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, url_for, redirect
+from flask import Flask, render_template, session, url_for, redirect, request
 from dotenv import load_dotenv
 import os
 
@@ -30,7 +30,8 @@ def login():
 
 @app.get("/jobs/devops")
 def jobs_devops():
-    return jobs_devops_formated()
+    keyword = request.args.get("keyword", "devops")
+    return jobs_devops_formated(keyword)
 
 
 @app.get("/jobs/devops/plot")
