@@ -43,11 +43,9 @@ def jobs_devops():
     return jobs_devops_formated(keyword)
 
 
-
 @app.get("/jobs/devops/local-search")
 def jobs_devops_local_search():
     return render_local_search_page()
-
 
 
 @app.get("/jobs/devops/plot")

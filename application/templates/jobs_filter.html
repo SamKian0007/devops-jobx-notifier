@@ -34,7 +34,10 @@
 {% if table_html %}
   <div class="card p-3">
     <h5>Results</h5>
-    {{ table_html|safe }}
+    <div class="table-container">
+      {{ table_html|safe }}
+    </div>
   </div>
 {% endif %}
+
 {% endblock %}

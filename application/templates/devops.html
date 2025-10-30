@@ -9,7 +9,6 @@
       <div class="card p-3 w-100">
         <h2 class="h5">{{ header }}</h2>
 
-        <!-- ✅ Updated form: matches your /jobs/devops/local-search endpoint -->
         <form action="/jobs/devops/local-search" method="get" class="mb-3">
           <div class="input-group" style="max-width:400px;">
             <input
@@ -24,7 +23,9 @@
         </form>
 
         {% if table_html %}
-          {{ table_html|safe }}
+          <div class="table-container">
+            {{ table_html|safe }}
+          </div>
         {% else %}
           <div class="alert alert-warning mt-3" role="alert">
             No job data available. Please <a href="/jobs/devops">fetch jobs</a> first.

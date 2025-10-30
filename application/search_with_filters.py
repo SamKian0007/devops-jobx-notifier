@@ -46,6 +46,6 @@ def jobs_filter():
     return render_template(
         "jobs_filter.html",
         title="Filter Jobs",
-        header="Filter Jobs",
+        header=" ",
         table_html=table_html
     )
