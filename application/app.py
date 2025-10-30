@@ -28,6 +28,26 @@ def login():
     return render_template("login.html", title="login", header="Job Explorer !")
 
 
+@app.post("/jobs/filter")
+def jobs_filter_post():
+    # Collect form data
+    user_posts = request.form.to_dict(flat=True)
+    params = get_params_from_user_posts(user_posts)
+    results = []
+    try:
+        results = fetch_jobs_with_filters(params)
+    except Exception as e:
+        # Minimal error handling: show empty results; in a fuller app, use flash/alerts
+        results = []
+    return render_template(
+        "jobs_filter.html",
+        title="Job Filter",
+        header="Filter Jobs",
+        results=results,
+        params=params,
+    )
+
+
 @app.get("/jobs/devops")
 def jobs_devops():
     keyword = request.args.get("keyword", "devops")
