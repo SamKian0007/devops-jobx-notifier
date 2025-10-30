@@ -18,17 +18,15 @@ def jobs_devops_plot():
               .sort_values("Jobs", ascending=False)
               .head(7)
         )
-        fig = px.bar(city_counts, x="City", y="Jobs",
-                     title="DevOps job ads by city (top 7)")
-        fig.update_layout(autosize=True, margin=dict(l=20, r=20, t=50, b=20))
+
         fig = px.bar(city_counts, x="City", y="Jobs",
                      title="DevOps job ads by city (top 7)",
                      color="City")
         fig.update_layout(
-            xaxis_title="",
+            xaxis_title=" ",
             yaxis_title="Jobs",
-            xaxis=dict(tickangle=0, title_standoff=10),
-            margin=dict(l=20, r=20, t=50, b=80),
+            xaxis=dict(tickangle=0, title_standoff=5),
+            margin=dict(l=4, r=4, t=40, b=4),
             legend=dict(orientation="v", x=1.02, y=1),
         )
 
