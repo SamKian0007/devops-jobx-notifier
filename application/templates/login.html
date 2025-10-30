@@ -11,23 +11,31 @@
   <h4>Welcome to the Logged in Page!</h4>
 
   <div class="row mt-4">
-    <div class="col-md-6 mb-3">
+     <div class="col-md-8 mx-auto mb-3">
       <div class="card p-4 text-center">
-        <h5>DevOps Jobs</h5>
+        <h5>The latest 50 DevOps job openings</h5>
         <p>See the latest DevOps positions.</p>
-        <a href="{{ url_for('jobs_devops') }}" class="btn btn-primary">View Jobs</a>
+        <a href="{{ url_for('jobs_devops') }}" class="btn btn-primary w-50 mx-auto">View Jobs</a>
       </div>
     </div>
-    <div class="col-md-6 mb-3">
+     <div class="col-md-8 mx-auto mb-3">
       <div class="card p-4 text-center">
         <h5>DevOps Jobs Plot</h5>
         <p>Visualize DevOps job data.</p>
-        <a href="{{ url_for('view_plot') }}" class="btn btn-primary">View Plot</a>
+        <a href="{{ url_for('view_plot') }}" class="btn btn-primary w-50 mx-auto">View Plot</a>
       </div>
     </div>
+    <div class="col-md-8 mx-auto mb-3">
+    <div class="card p-4 text-center">
+      <h5>Filter Jobs</h5>
+      <p>Search and filter jobs with advanced options.</p>
+      <a href="{{ url_for('filters.jobs_filter') }}" class="btn btn-primary w-50 mx-auto">Open Filter</a>
+    </div>
+    
+</div>
   </div>
 
   <div class="text-center mt-4">
-    <a href="{{ url_for('auth.logout') }}" class="btn btn-danger">Log out</a>
+    <a href="{{ url_for('auth.logout') }}" class="btn btn-danger px-5">Log out</a>
   </div>
 {% endblock %}
