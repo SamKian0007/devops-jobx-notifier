@@ -3,13 +3,13 @@
 {% block content %}
 <h2 class="fw-bold mb-4">Filter Jobs</h2>
 
-<form method="get" action="{{ url_for('jobs_filter') }}" class="card p-4 mb-4 shadow-sm">
+<form method="get" action="{{ url_for('filters.jobs_filter') }}" class="card p-4 mb-4 shadow-sm">
   <div class="row g-3 align-items-end">
-    <div class="col-md-4">
+    <div class="col-md-3">
       <label class="form-label">Keywords</label>
       <input type="text" class="form-control" name="keyword" value="{{ request.args.get('keyword', '') }}">
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <label class="form-label">Location (municipality)</label>
       <input type="text" class="form-control" name="location" value="{{ request.args.get('location', '') }}">
     </div>
@@ -17,10 +17,7 @@
       <label class="form-label">Limit</label>
       <input type="number" class="form-control" name="limit" value="{{ request.args.get('limit', 20) }}">
     </div>
-  </div>
-
-  <div class="row g-3 mt-3">
-    <div class="col-md-3">
+    <div class="col-md-2">
       <label class="form-label">Remote</label>
       <select class="form-select" name="remote">
         <option value="">Any</option>
@@ -28,8 +25,8 @@
         <option value="false" {% if request.args.get('remote') == 'false' %}selected{% endif %}>No</option>
       </select>
     </div>
-    <div class="col-md-3">
-      <button type="submit" class="btn btn-primary mt-4">Search</button>
+    <div class="col-md-2 text-end">
+      <button type="submit" class="btn btn-primary w-100 mt-4">Search</button>
     </div>
   </div>
 </form>

@@ -6,6 +6,7 @@ from application.jobs_dataframe import devops_jobs_dataframe
 from application.dataframe_plot import jobs_devops_plot
 from application.dataframe_devops import jobs_devops_formated
 from application.search_with_filters import bp as filters_bp
+from application.local_search import render_local_search_page
 from application.notify import send_devops_jobs_update
 from application.login import bp as auth_bp
 import os
@@ -40,6 +41,13 @@ def jobs_filter():
 def jobs_devops():
     keyword = request.args.get("keyword", "devops")
     return jobs_devops_formated(keyword)
+
+
+
+@app.get("/jobs/devops/local-search")
+def jobs_devops_local_search():
+    return render_local_search_page()
+
 
 
 @app.get("/jobs/devops/plot")
