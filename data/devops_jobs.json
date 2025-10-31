@@ -1,12 +1,502 @@
 [
   {
-    "Title":"DevOps",
-    "Employer":"A",
-    "City":"Stockholm",
-    "Published":"2025-10-31",
-    "Employment":"Remote",
-    "Duration":"Permanent",
+    "Title":"DevOps Engineer",
+    "Employer":"cilbuper IT AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-10-31T10:00:05",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
     "Experience Required":true,
-    "Apply URL":"https:\/\/example.com\/job"
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30210424"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Happy Group AB",
+    "City":"Stockholm",
+    "Published":"2025-10-29T11:20:15",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":false,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30201448"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Knightec Group AB",
+    "City":"V\u00e4ster\u00e5s",
+    "Published":"2025-10-28T10:44:22",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30196076"
+  },
+  {
+    "Title":"Produkt\u00e4gare DevOps",
+    "Employer":"Pensionsmyndigheten",
+    "City":"Lule\u00e5",
+    "Published":"2025-10-24T11:52:26",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30185257"
+  },
+  {
+    "Title":"Produkt\u00e4gare DevOps",
+    "Employer":"Pensionsmyndigheten",
+    "City":"Stockholm",
+    "Published":"2025-10-24T11:44:36",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30185167"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Raysearch Laboratories AB (Publ)",
+    "City":"Stockholm",
+    "Published":"2025-10-23T11:08:27",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30179858"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Castra Group AB",
+    "City":"Stockholm",
+    "Published":"2025-10-15T16:12:01",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30150692"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"I-Ray IT Solutions AB",
+    "City":"Solna",
+    "Published":"2025-10-13T08:59:00",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30135518"
+  },
+  {
+    "Title":"Devops GCP",
+    "Employer":"Justera Group AB",
+    "City":"Stockholm",
+    "Published":"2025-10-10T13:54:31",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30131899"
+  },
+  {
+    "Title":"DevOps konsult",
+    "Employer":"Infinity IT Consulting AB",
+    "City":"Stockholm",
+    "Published":"2025-10-07T15:35:11",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30117239"
+  },
+  {
+    "Title":"Devops Admin",
+    "Employer":"Knowit AB (Publ)",
+    "City":"Stockholm",
+    "Published":"2025-10-07T10:07:01",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30114091"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Centric Professionals AB",
+    "City":"Sundbyberg",
+    "Published":"2025-10-01T17:41:22",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30095239"
+  },
+  {
+    "Title":"Devops Engineer",
+    "Employer":"Tata Technologies Nordics AB",
+    "City":"S\u00f6dert\u00e4lje",
+    "Published":"2025-10-01T07:28:40",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30090910"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Logikfabriken AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-09-22T15:25:52",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30057027"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Procruitment AB",
+    "City":"Stockholm",
+    "Published":"2025-09-22T13:13:31",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30055637"
+  },
+  {
+    "Title":"DevOps Linux",
+    "Employer":"Camai Consulting AB",
+    "City":"Stockholm",
+    "Published":"2025-09-17T09:20:31",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30037771"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"International Consumer Services Sweden AB",
+    "City":"Stockholm",
+    "Published":"2025-09-16T10:32:50",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30032181"
+  },
+  {
+    "Title":"DevOps Developer",
+    "Employer":"Knightec Group AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-08-29T15:46:15",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29967741"
+  },
+  {
+    "Title":"DevOps Engineer",
+    "Employer":"Stegra Boden AB",
+    "City":"Boden",
+    "Published":"2025-05-14T13:29:04",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29702526"
+  },
+  {
+    "Title":"ASIC Devops Engineer",
+    "Employer":"Ericsson AB",
+    "City":null,
+    "Published":"2025-10-29T13:25:04",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30202331"
+  },
+  {
+    "Title":"Senior DevOps Engineer",
+    "Employer":"2Mnordic IT Consulting AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-10-16T13:19:35",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30153889"
+  },
+  {
+    "Title":"Senior DevOps Engineer",
+    "Employer":"2Mnordic IT Consulting AB",
+    "City":"Helsingborg",
+    "Published":"2025-10-16T13:18:00",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30153853"
+  },
+  {
+    "Title":"BizTalk DevOps Engineer",
+    "Employer":"NXT Interim Stockholm AB",
+    "City":"Stockholm",
+    "Published":"2025-10-06T15:22:31",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30111103"
+  },
+  {
+    "Title":"Senior DevOps ingenj\u00f6r",
+    "Employer":"Syntronic AB",
+    "City":"Stockholm",
+    "Published":"2025-10-02T14:09:51",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":false,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30098492"
+  },
+  {
+    "Title":"Senior DevOps Engineer",
+    "Employer":"VIPAS AB",
+    "City":"Stockholm",
+    "Published":"2025-09-16T16:30:11",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30036248"
+  },
+  {
+    "Title":"Senior DevOps Engineer",
+    "Employer":"Irisity AB (publ)",
+    "City":"G\u00f6teborg",
+    "Published":"2025-09-03T13:10:25",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29983430"
+  },
+  {
+    "Title":"Senior DevOps Infrastructure Developer",
+    "Employer":"SkillHuset Sweden AB",
+    "City":"Stockholm",
+    "Published":"2025-10-31T01:38:20",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30209460"
+  },
+  {
+    "Title":"Senior DevOps Engineer IRC278516",
+    "Employer":"GlobalLogic Sweden AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-10-27T16:39:25",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30193920"
+  },
+  {
+    "Title":"DevOps Engineer - webb",
+    "Employer":"Pensionsmyndigheten",
+    "City":"Stockholm",
+    "Published":"2025-10-24T11:12:16",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30184772"
+  },
+  {
+    "Title":"DevOps \/ Cloud Engineer",
+    "Employer":"Klaravik AB",
+    "City":"Lund",
+    "Published":"2025-10-23T09:14:16",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30178900"
+  },
+  {
+    "Title":"DevOps & Cloud Engineer",
+    "Employer":"Alten Sverige AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-10-13T13:02:22",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30138014"
+  },
+  {
+    "Title":"DevOps & Backend Developer",
+    "Employer":"Nordic E Trade AB",
+    "City":"Stockholm",
+    "Published":"2025-10-06T09:24:20",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30107602"
+  },
+  {
+    "Title":"Devops \/ Release engineer ",
+    "Employer":"Nordomatic AB",
+    "City":"Stockholm",
+    "Published":"2025-09-26T09:05:42",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30074431"
+  },
+  {
+    "Title":"Devops Engineer CI\/CD platform",
+    "Employer":"Camai Consulting AB",
+    "City":"Stockholm",
+    "Published":"2025-05-26T16:42:03",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29731755"
+  },
+  {
+    "Title":"DevOps Engineer \u2013 Stockholm heltid",
+    "Employer":"Modernera AB",
+    "City":"Stockholm",
+    "Published":"2025-10-28T12:20:15",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30196922"
+  },
+  {
+    "Title":"DevOps to Dise in Karlstad",
+    "Employer":"Dise International AB",
+    "City":"Karlstad",
+    "Published":"2025-10-23T09:49:36",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30179174"
+  },
+  {
+    "Title":"DevOps Engineer for Automotive Industry",
+    "Employer":"Alten Sverige AB",
+    "City":"Stockholm",
+    "Published":"2025-10-06T09:02:11",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30107472"
+  },
+  {
+    "Title":"Senior DevOps Engineer - 13379",
+    "Employer":"Veritaz AB",
+    "City":null,
+    "Published":"2025-10-03T14:12:15",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30103622"
+  },
+  {
+    "Title":"DevOps Engineer till Sveriges Riksbank",
+    "Employer":"Sveriges Riksbank",
+    "City":"Stockholm",
+    "Published":"2025-10-02T20:37:23",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30100251"
+  },
+  {
+    "Title":"Product Owner DevOps & AI",
+    "Employer":"Techster Solutions AB",
+    "City":"Stockholm",
+    "Published":"2025-09-09T09:42:25",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30004728"
+  },
+  {
+    "Title":"Senior Cloud & DevOps Engineer",
+    "Employer":"Jobbs On Sweden AB",
+    "City":"Stockholm",
+    "Published":"2025-08-19T15:06:56",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":false,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29925224"
+  },
+  {
+    "Title":"Senior BizTalk DevOps Engineer \u2013 13529",
+    "Employer":"Veritaz AB",
+    "City":null,
+    "Published":"2025-10-07T17:09:30",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30118004"
+  },
+  {
+    "Title":"DevOps tekniker s\u00f6kes till Cleura Stockholm",
+    "Employer":"Iver Sverige AB",
+    "City":"Stockholm",
+    "Published":"2025-09-10T16:48:55",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30014088"
+  },
+  {
+    "Title":"Senior Fullstack Developer (Rust, DevOps, Realtid)",
+    "Employer":"Jobbs On Sweden AB",
+    "City":null,
+    "Published":"2025-06-25T09:24:37",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":false,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29790826"
+  },
+  {
+    "Title":"DevOps Engineer till h\u00f6gteknologisk utvecklingsmilj\u00f6 inom f\u00f6rsvarsindustrin",
+    "Employer":"Tech Talents Consulting i Sverige AB",
+    "City":"J\u00e4rf\u00e4lla",
+    "Published":"2025-10-09T08:37:51",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30123961"
+  },
+  {
+    "Title":"Vi s\u00f6ker en DevOps Engineer till Upptec",
+    "Employer":"Friday V\u00e4st AB",
+    "City":"Malm\u00f6",
+    "Published":"2025-10-07T16:18:51",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30117685"
+  },
+  {
+    "Title":"Cloud Infra & DevOps - Senior Developer",
+    "Employer":"VIPAS AB",
+    "City":"Stockholm",
+    "Published":"2025-09-03T16:59:35",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29985482"
+  },
+  {
+    "Title":"Senior Software \/ Networks \/ Devops \/ Cybersecurity Engineer",
+    "Employer":"SATCUBE AB",
+    "City":"G\u00f6teborg",
+    "Published":"2025-10-29T08:47:52",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30200139"
+  },
+  {
+    "Title":"DevOps Engineer till Netler - Av utvecklare, f\u00f6r utvecklare",
+    "Employer":"Academic Work Sweden AB",
+    "City":"Stockholm",
+    "Published":"2025-10-24T12:00:38",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"6 m\u00e5nader eller l\u00e4ngre",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/30185307"
+  },
+  {
+    "Title":"DevOps \u2013 med fokus p\u00e5 automation, pipelines och infrastruktur",
+    "Employer":"Knowit AB (Publ)",
+    "City":"G\u00f6teborg",
+    "Published":"2025-08-15T13:19:25",
+    "Employment":"Vanlig anst\u00e4llning",
+    "Duration":"Tills vidare",
+    "Experience Required":true,
+    "Apply URL":"https:\/\/arbetsformedlingen.se\/platsbanken\/annonser\/29913170"
   }
 ]
