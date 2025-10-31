@@ -1,4 +1,4 @@
-# application/dataframe_plot.py
+# application/dataframe_devops.py
 from flask import render_template, request
 import plotly.express as px
 import plotly.io as pio

@@ -1,4 +1,4 @@
-# search_with_filters.py
+# app.py
 from flask import Flask, render_template, session, url_for, redirect, request
 from dotenv import load_dotenv
 
