@@ -1,40 +1,39 @@
-# local_search.py    
+# local_search.py
+"""Module for performing and displaying local DevOps job searches.
+
+This module enables keyword-based searches on locally saved DevOps job data
+and renders the results as an HTML table within a Flask template.
+"""
 
 import os
 import pandas as pd
 from flask import render_template, request
 
-# Reuse the same saved JSON path as in jobs_dataframe.py
 DATA_PATH = os.path.join("data", "devops_jobs.json")
 
 
 def search_local_jobs(keyword: str = "") -> pd.DataFrame:
-    """Search locally saved jobs by keyword across all columns."""
+    """Return locally saved jobs filtered by keyword."""
     if not os.path.exists(DATA_PATH):
-        return pd.DataFrame()  # No saved file yet
-
+        return pd.DataFrame()
     df = pd.read_json(DATA_PATH)
     if not keyword:
         return df
-
     keyword_lower = keyword.lower()
     mask = df.apply(lambda col: col.astype(
         str).str.lower().str.contains(keyword_lower, na=False))
-    filtered_df = df[mask.any(axis=1)]
-    return filtered_df
+    return df[mask.any(axis=1)]
 
 
 def render_local_search_page():
-    """Flask view logic: get keyword, filter DataFrame, render HTML."""
+    """Render filtered job results as HTML."""
     keyword = request.args.get("keyword", "").strip()
     df = search_local_jobs(keyword)
-
     table_html = df.to_html(
         classes="table table-striped table-bordered table-hover align-middle",
         index=False,
         border=0
     )
-
     return render_template(
         "devops.html",
         title=f"Local Search Results for '{keyword or 'All'}'",

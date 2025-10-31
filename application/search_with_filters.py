@@ -1,3 +1,12 @@
+# search_with_filters.py
+"""Module defining blueprint for filtered job search functionality.
+
+This module provides a Flask blueprint that handles job filtering
+based on user-specified parameters such as keyword, location, remote
+option, and result limit. Filtered job results are rendered as an
+HTML table in the template.
+"""
+
 from flask import Blueprint, render_template, request
 from application.jobs_dataframe import devops_jobs_dataframe
 
@@ -6,25 +15,23 @@ bp = Blueprint("filters", __name__, url_prefix="/jobs")
 
 @bp.get("/filter")
 def jobs_filter():
+    """Fetch, filter, and render job results based on query parameters."""
     keyword = request.args.get("keyword", "devops").strip()
     location = request.args.get("location", "").strip()
     remote = request.args.get("remote", "")
     limit_arg = request.args.get("limit", "20")
 
-    # ✅ Validate numeric input
     try:
         limit = max(1, min(int(limit_arg), 100))
     except ValueError:
-        limit = 20  # default if invalid input
+        limit = 20
 
-    # ✅ Fetch jobs
     try:
-        df = devops_jobs_dataframe(keyword, limit+1)
+        df = devops_jobs_dataframe(keyword, limit + 1)
     except Exception as e:
-        df = None
         print(f"Error fetching jobs: {e}")
+        df = None
 
-    # ✅ Filter
     if df is not None and not df.empty:
         if location:
             df = df[df["City"].str.contains(location, case=False, na=False)]

@@ -1,4 +1,10 @@
 # application/dataframe_plot.py
+"""Module for generating and rendering DevOps job charts.
+
+This module creates an interactive Plotly bar chart and formatted HTML table
+based on DevOps job listings, then renders them within a Flask template.
+"""
+
 from flask import render_template, request
 import plotly.express as px
 import plotly.io as pio
@@ -6,6 +12,7 @@ from application.jobs_dataframe import devops_jobs_dataframe
 
 
 def jobs_devops_plot():
+    """Generate Plotly bar chart and render DevOps job data."""
     df = devops_jobs_dataframe("devops", 50)
 
     chart_html = ""
