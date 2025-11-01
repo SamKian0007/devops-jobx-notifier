@@ -1,7 +1,14 @@
 import os
 
+"""
+This module tests the Flask application's login functionality using environment-based
+credentials. It verifies that valid credentials allow access while invalid ones trigger
+an error message or remain on the login page.
+"""
+
 
 def test_login_success(client, monkeypatch):
+    """Test that a user with correct credentials can log in successfully."""
     monkeypatch.setenv("APP_USERNAME", "user")
     monkeypatch.setenv("APP_PASSWORD", "pass")
 
@@ -11,6 +18,7 @@ def test_login_success(client, monkeypatch):
 
 
 def test_login_failure(client, monkeypatch):
+    """Test that login fails and shows an error for invalid credentials."""
     monkeypatch.setenv("APP_USERNAME", "user")
     monkeypatch.setenv("APP_PASSWORD", "pass")
 

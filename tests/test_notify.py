@@ -1,7 +1,14 @@
 import pandas as pd
 
+"""
+This module tests the job notification endpoint of the Flask application.
+It mocks job data retrieval and email sending to ensure the notify route
+triggers email notifications correctly without making real API or email calls.
+"""
+
 
 def test_notify_users(client, monkeypatch):
+    """Test that the notify endpoint sends an email with job details."""
     def mock_fetch_jobs(keyword, limit):
         return [
             {"headline": "DevOps", "employer": {"name": "A"},

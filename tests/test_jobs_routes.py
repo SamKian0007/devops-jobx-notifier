@@ -1,8 +1,14 @@
 import pandas as pd
 
+"""
+This module tests the Flask application's job-related routes using mocked data.
+It ensures the `/jobs/devops` and `/jobs/devops/plot` endpoints return correct
+responses and expected job details without relying on live API calls.
+"""
+
 
 def test_jobs_devops(client, monkeypatch):
-    # mock the API data fetch
+    """Test that the /jobs/devops route renders job listings correctly."""
     def mock_fetch_jobs(keyword, limit):
         return [
             {"headline": "DevOps Engineer", "employer": {"name": "TechCorp"},
@@ -23,6 +29,7 @@ def test_jobs_devops(client, monkeypatch):
 
 
 def test_jobs_devops_plot(client, monkeypatch):
+    """Test that the /jobs/devops/plot route returns correct location data."""
     def mock_fetch_jobs(keyword, limit):
         return [
             {"headline": "DevOps", "employer": {"name": "A"},

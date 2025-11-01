@@ -1,8 +1,14 @@
 import pandas as pd
 
+"""
+This module tests local job search and job filtering routes in the Flask app.
+It uses mocked data and monkeypatching to isolate functionality and verify
+correct handling of search queries and filtered job listings.
+"""
+
 
 def test_local_search_page(client, monkeypatch):
-    # mock local file reading
+    """Test that the local search route returns correct local job data."""
     mock_df = pd.DataFrame([{"Title": "DevOps Eng", "City": "Stockholm"}])
     monkeypatch.setattr(
         "application.local_search.search_local_jobs", lambda k="": mock_df)
@@ -13,7 +19,7 @@ def test_local_search_page(client, monkeypatch):
 
 
 def test_jobs_filter(client, monkeypatch):
-    # mock job fetch with two cities
+    """Test that the job filter route correctly filters and returns job results."""
     def mock_fetch_jobs(keyword, limit):
         return [
             {"headline": "DevOps", "employer": {"name": "A"},
